@@ -1,0 +1,27 @@
+{
+  "name": "مصرفون - راديو التراث",
+  "short_name": "مصرفون",
+  "description": "إذاعة تراثية مصرية غير ربحية - إصدار تأبيني تكريمًا للدكتور عصمت النمر",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#439330",
+  "theme_color": "#174C0F",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "maskable"
+    }
+  ]
+}

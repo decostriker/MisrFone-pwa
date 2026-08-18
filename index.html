@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<title>مصرفون - راديو التراث</title>
+<meta name="description" content="مصرفون - راديو التراث. إذاعة تراثية مصرية غير ربحية، إصدار تأبيني تكريمًا للدكتور عصمت النمر">
+
+<!-- iOS PWA meta tags -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="مصرفون">
+<meta name="theme-color" content="#174C0F">
+<link rel="apple-touch-icon" href="logo.jpg">
+<link rel="manifest" href="manifest.json">
+
+<style>
+  :root{
+    --green-light: #90C46C;
+    --green-dark: #439330;
+    --green-deep: #174C0F;
+    --cream: #F7F5EE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{
+    height:100%;
+    font-family: 'Tahoma', 'Segoe UI', sans-serif;
+    background: linear-gradient(160deg, var(--green-dark) 0%, var(--green-light) 100%);
+    overflow-x:hidden;
+  }
+  .app{
+    min-height:100vh;
+    min-height: 100dvh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom) 0;
+  }
+  /* decorative waves */
+  .wave{
+    position:absolute;
+    left:0; right:0;
+    width:100%;
+    opacity:0.35;
+    pointer-events:none;
+  }
+  .wave-top{ top:0; }
+  .wave-bottom{ bottom:0; transform: rotate(180deg); }
+
+  .memorial-badge{
+    margin-top: 18px;
+    background: rgba(23,76,15,0.85);
+    color:#fff;
+    font-size:12px;
+    padding:5px 14px;
+    border-radius:20px;
+    letter-spacing:0.5px;
+    z-index:2;
+  }
+
+  .logo-wrap{
+    margin-top:22px;
+    width:120px; height:120px;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    z-index:2;
+    background:#fff;
+  }
+  .logo-wrap img{ width:100%; height:100%; object-fit:cover; }
+
+  h1.title{
+    margin-top:14px;
+    color:#fff;
+    font-size:24px;
+    font-weight:700;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index:2;
+  }
+  p.subtitle{
+    color: rgba(255,255,255,0.9);
+    font-size:13px;
+    margin-top:4px;
+    z-index:2;
+  }
+
+  .banner{
+    width:92%;
+    max-width:440px;
+    margin-top:18px;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    z-index:2;
+  }
+  .banner img{ width:100%; display:block; }
+
+  .card{
+    margin-top:22px;
+    width:88%;
+    max-width:420px;
+    background: rgba(255,255,255,0.14);
+    backdrop-filter: blur(8px);
+    border-radius:22px;
+    padding:22px 18px 26px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    z-index:2;
+    border: 1px solid rgba(255,255,255,0.25);
+  }
+
+  .now-playing-label{
+    color: rgba(255,255,255,0.85);
+    font-size:12px;
+    margin-bottom:4px;
+  }
+  .now-playing-text{
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    text-align:center;
+    min-height:22px;
+  }
+
+  .listeners{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin-top:8px;
+    color: rgba(255,255,255,0.9);
+    font-size:13px;
+  }
+  .listeners .dot{
+    width:8px; height:8px; border-radius:50%;
+    background:#ff5252;
+    box-shadow: 0 0 0 0 rgba(255,82,82,0.6);
+    animation: pulse 1.6s infinite;
+  }
+  @keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(255,82,82,0.5); }
+    70%{ box-shadow:0 0 0 8px rgba(255,82,82,0); }
+    100%{ box-shadow:0 0 0 0 rgba(255,82,82,0); }
+  }
+
+  .play-btn{
+    margin-top:22px;
+    width:150px;
+    height:56px;
+    border-radius:28px;
+    background: var(--green-deep);
+    border: none;
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    cursor:pointer;
+    transition: transform .15s ease, box-shadow .15s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .play-btn:active{ transform: scale(0.96); }
+  .play-btn svg{ width:20px; height:20px; fill:#fff; }
+
+  .status-text{
+    margin-top:12px;
+    color: rgba(255,255,255,0.75);
+    font-size:12px;
+  }
+
+  .footer{
+    margin-top:auto;
+    padding: 22px 12px 10px;
+    text-align:center;
+    color: rgba(255,255,255,0.75);
+    font-size:11px;
+    z-index:2;
+    line-height:1.8;
+  }
+  .add-home-hint{
+    margin-top:6px;
+    display:none;
+    background: rgba(255,255,255,0.15);
+    border-radius:12px;
+    padding:8px 14px;
+    font-size:11px;
+    color:#fff;
+    max-width:280px;
+  }
+
+  audio{ display:none; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <svg class="wave wave-top" viewBox="0 0 500 60" preserveAspectRatio="none">
+    <path d="M0,30 C150,60 350,0 500,30 L500,0 L0,0 Z" fill="#ffffff" opacity="0.15"></path>
+  </svg>
+
+  <div class="memorial-badge">إصدار تأبيني — تكريمًا للدكتور عصمت النمر</div>
+
+  <div class="logo-wrap">
+    <img src="logo.jpg" alt="شعار مصرفون">
+  </div>
+
+  <h1 class="title">مصرفون</h1>
+  <p class="subtitle">راديو التراث المصري</p>
+
+  <div class="banner">
+    <img src="banner.png" alt="فرقة تراثية مصرية">
+  </div>
+
+  <div class="card">
+    <div class="now-playing-label">يُذاع الآن</div>
+    <div class="now-playing-text" id="nowPlaying">جاري التحميل...</div>
+
+    <div class="listeners">
+      <span class="dot"></span>
+      <span id="listenerCount">— مستمع</span>
+    </div>
+
+    <button class="play-btn" id="playBtn" onclick="togglePlay()">
+      <svg id="playIcon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      <span id="playLabel">استماع</span>
+    </button>
+
+    <div class="status-text" id="statusText">اضغط للاستماع للبث المباشر</div>
+  </div>
+
+  <div class="footer">
+    من أرشيف الدكتور عصمت النمر — أكثر من 500 ساعة من التراث الغنائي المصري
+    <div class="add-home-hint" id="addHomeHint">
+      لإضافة التطبيق على شاشتك الرئيسية: اضغط زر المشاركة ⬆️ ثم "إضافة إلى الشاشة الرئيسية"
+    </div>
+  </div>
+
+  <svg class="wave wave-bottom" viewBox="0 0 500 60" preserveAspectRatio="none">
+    <path d="M0,30 C150,60 350,0 500,30 L500,0 L0,0 Z" fill="#ffffff" opacity="0.15"></path>
+  </svg>
+
+  <audio id="radioAudio" preload="none">
+    <source src="http://16.192.192.242:8000/radio.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<script>
+  const audio = document.getElementById('radioAudio');
+  const playBtn = document.getElementById('playBtn');
+  const playIcon = document.getElementById('playIcon');
+  const playLabel = document.getElementById('playLabel');
+  const statusText = document.getElementById('statusText');
+  const nowPlaying = document.getElementById('nowPlaying');
+  const listenerCount = document.getElementById('listenerCount');
+
+  let isPlaying = false;
+
+  function togglePlay(){
+    if(!isPlaying){
+      audio.load();
+      audio.play().then(()=>{
+        isPlaying = true;
+        playIcon.innerHTML = '<path d="M6 5h4v14H6zM14 5h4v14h-4z"/>';
+        playLabel.textContent = 'إيقاف';
+        statusText.textContent = 'جاري البث المباشر...';
+      }).catch(()=>{
+        statusText.textContent = 'تعذر تشغيل البث، حاول مرة أخرى';
+      });
+    } else {
+      audio.pause();
+      isPlaying = false;
+      playIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+      playLabel.textContent = 'استماع';
+      statusText.textContent = 'اضغط للاستماع للبث المباشر';
+    }
+  }
+
+  async function fetchNowPlaying(){
+    try{
+      const res = await fetch('http://16.192.192.242/api/nowplaying/misrfone');
+      const data = await res.json();
+      const title = data?.now_playing?.song?.title || '';
+      const artist = data?.now_playing?.song?.artist || '';
+      nowPlaying.textContent = (artist ? artist + ' - ' : '') + (title || 'تراث مصري أصيل');
+      const listeners = data?.listeners?.current ?? data?.listeners?.total ?? 0;
+      listenerCount.textContent = listeners + ' مستمع الآن';
+    }catch(e){
+      nowPlaying.textContent = 'تراث مصري أصيل';
+      listenerCount.textContent = '— مستمع';
+    }
+  }
+
+  fetchNowPlaying();
+  setInterval(fetchNowPlaying, 15000);
+
+  // iOS add-to-home-screen hint (only if not already installed and on iOS Safari)
+  const isIos = /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
+  const isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator.standalone);
+  if(isIos && !isInStandaloneMode){
+    document.getElementById('addHomeHint').style.display = 'block';
+  }
+
+  // Register service worker
+  if('serviceWorker' in navigator){
+    window.addEventListener('load', ()=>{
+      navigator.serviceWorker.register('sw.js').catch(()=>{});
+    });
+  }
+</script>
+</body>
+</html>
