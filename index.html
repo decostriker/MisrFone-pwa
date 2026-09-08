@@ -66,7 +66,7 @@
     overflow:hidden;
     box-shadow: 0 8px 24px rgba(0,0,0,0.25);
     z-index:2;
-    background:transparent;
+    background:#fff;
   }
   .logo-wrap img{ width:100%; height:100%; object-fit:cover; }
 
@@ -173,7 +173,7 @@
   }
 
   .footer{
-    margin-top:auto;
+    margin-top:32px;
     padding: 22px 12px 10px;
     text-align:center;
     color: rgba(255,255,255,0.75);
@@ -191,26 +191,34 @@
     color:#fff;
     max-width:280px;
   }
+
   audio{ display:none; }
 </style>
 </head>
 <body>
 <div class="app">
+
   <svg class="wave wave-top" viewBox="0 0 500 60" preserveAspectRatio="none">
     <path d="M0,30 C150,60 350,0 500,30 L500,0 L0,0 Z" fill="#ffffff" opacity="0.15"></path>
   </svg>
+
   <div class="memorial-badge">إصدار تأبيني — تكريمًا للدكتور عصمت النمر</div>
+
   <div class="logo-wrap">
     <img src="logo.jpg" alt="شعار مصرفون">
   </div>
+
   <h1 class="title">مصرفون</h1>
   <p class="subtitle">راديو التراث المصري</p>
+
   <div class="banner">
     <img src="banner.png" alt="فرقة تراثية مصرية">
   </div>
+
   <div class="card">
     <div class="now-playing-label">يُذاع الآن</div>
     <div class="now-playing-text" id="nowPlaying">جاري التحميل...</div>
+
     <div class="listeners">
       <span class="dot"></span>
       <span id="listenerCount">— مستمع</span>
@@ -220,6 +228,7 @@
       <svg id="playIcon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
       <span id="playLabel">استماع</span>
     </button>
+
     <div class="status-text" id="statusText">اضغط للاستماع للبث المباشر</div>
   </div>
 
@@ -229,9 +238,11 @@
       لإضافة التطبيق على شاشتك الرئيسية: اضغط زر المشاركة ⬆️ ثم "إضافة إلى الشاشة الرئيسية"
     </div>
   </div>
+
   <svg class="wave wave-bottom" viewBox="0 0 500 60" preserveAspectRatio="none">
     <path d="M0,30 C150,60 350,0 500,30 L500,0 L0,0 Z" fill="#ffffff" opacity="0.15"></path>
   </svg>
+
   <audio id="radioAudio" preload="none">
     <source src="https://misrfone.duckdns.org:8000/radio.mp3" type="audio/mpeg">
   </audio>
@@ -301,9 +312,9 @@
   }
 </script>
   <div style="text-align:center; padding:10px;">
-  <a href="http://www.internet-radio.com" target="_blank" rel="noopener">
-    <img src="https://www.internet-radio.com/images/internet-radio-badge.gif" alt="Internet Radio">
-  </a>
-</div>
+316      <a href="http://www.internet-radio.com" target="_blank" rel="noopener">
+317        <img src="https://www.internet-radio.com/images/internet-radio-badge.gif" alt="Internet Radio">
+318      </a>
+319    </div>
 </body>
 </html>
