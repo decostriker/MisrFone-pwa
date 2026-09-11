@@ -17,10 +17,122 @@
     "died_year": "1923",
     "bio": "يُلقب بـ«فنان الشعب» و«أبو الموسيقى المصرية الحديثة»، أحدث ثورة في الموسيقى العربية بربطها بالواقع الاجتماعي والوطني. رغم قصر حياته، ترك إرثاً موسيقياً أثّر في كل من جاء بعده من الملحنين المصريين."
   },
-    "أسمهان": {
+  "أسمهان": {
     "photo": "https://decostriker.github.io/MisrFone-pwa/artists/Asmahan.jpg",
     "born_year": "1912",
     "died_year": "1944",
     "bio": "مطربة سورية-مصرية، تُعد من أعظم الأصوات في تاريخ الغناء العربي رغم قصر مسيرتها الفنية التي انتهت بوفاتها المبكرة والمفاجئة. تميزت بصوتها الفريد وقدرتها على التنقل بين المقامات الموسيقية المعقدة بسهولة استثنائية."
+  },
+  "محمد عبد المطلب": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/teleb.jpg",
+    "born_year": "",
+    "died_year": "1980",
+    "bio": "لُقب بـ«صوت الحارة المصرية»، من أبرز مطربي جيله، تعاون مع كبار الملحنين مثل بليغ حمدي وغنى مع نجوم عصره من أمثال أم كلثوم وعبد الحليم حافظ وفريد الأطرش ومحمد عبد الوهاب."
+  },
+  "منيرة المهدية": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/monira.jpg",
+    "born_year": "1885",
+    "died_year": "1965",
+    "bio": "لُقبت بـ«سلطانة الطرب»، وهي أول امرأة مصرية تقف على خشبة المسرح. بدأت حياتها الفنية في الزقازيق قبل أن تنتقل للقاهرة وتصبح من أهم نجمات الغناء والمسرح الغنائي في مطلع القرن العشرين."
+  },
+  "فتحية أحمد": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/fathya.jpg",
+    "born_year": "",
+    "died_year": "1975",
+    "bio": "لُقبت بـ«مطربة القُطرين»، اكتشف صوتها نجيب الريحاني وهي طفلة. تعاونت مع كبار ملحني عصر الطرب الذهبي مثل زكريا أحمد ورياض السنباطي، وكانت من أبرز منافسات أم كلثوم في بداية مسيرتها."
+  },
+  "بديعة مصابني": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/badyaa.jpg",
+    "born_year": "1892",
+    "died_year": "1974",
+    "bio": "راقصة ومنتجة فنية سورية اللبنانية الأصل، استقرت في مصر وأسست كازينو بديعة الشهير بميدان الأوبرا عام 1929، الذي كان أشبه بأكاديمية فنون تخرّج منها عدد كبير من كبار نجوم الفن والاستعراض في مصر."
+  },
+  "الشيخ علي محمود": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/ali-mahmoud.jpg",
+    "born_year": "1880",
+    "died_year": "1946",
+    "bio": "مقرئ ومنشد ديني مصري، يُعد من كبار أساتذة الموشحات والمدائح النبوية والابتهالات في عصره، وقد أثّر أسلوبه في التلوين الصوتي على كثير من موسيقيي ومطربي الجيل الذي تلاه."
+  },
+  "الشيخ إمام عيسى": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/Emam.jpg",
+    "born_year": "1918",
+    "died_year": "1995",
+    "bio": "مطرب وملحن مصري ضرير، اشتهر بأغانيه السياسية والوطنية اللاذعة التي قدمها بالتعاون مع الشاعر أحمد فؤاد نجم، وتأثر في بداياته بتلاوة القرآن والإنشاد الديني قبل أن يتجه للتلحين والغناء الشعبي.",
+    "composer": "أحمد فؤاد نجم (كلمات)"
+  },
+
+  "_ملاحظة": "الفنانين تحت دول لسه محتاجين بيانات - املأ الحقول الفاضية",
+
+  "الست تودد": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/tawadod.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
+  },
+  "عبد اللطيف البنا": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/elbana.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
+  },
+  "الشيخ أمين حسنين": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/amin-hasanien.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
+  },
+  "الشيخ أحمد برين": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/barien.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
+  },
+  "مدام عنايات": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/enayat.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
+  },
+  "فريدة مخيش": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/farida-makheesh.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
+  },
+  "الست فاطمة قدري": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/fatma-qadri.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
+  },
+  "فاطمة سري": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/fatma.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
+  },
+  "محمد أفندي بخيت": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/m-bekheet.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
+  },
+  "الست سمحة البغدادية": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/samha-baghdadya.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
+  },
+  "الست سنية حسنين": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/sanya-hassanin.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
+  },
+  "سيد أفندي شطا": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/sayed-shata.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": ""
   }
 }
