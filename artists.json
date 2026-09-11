@@ -1,30 +1,24 @@
 {
   "أم كلثوم": {
-    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/umm_kulthum.jpg",
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/umkalthom.jpg",
     "born_year": "1898",
     "died_year": "1975",
     "bio": "لقبت بـ«كوكب الشرق»، من أعظم مطربات القرن العشرين في العالم العربي. بدأت الغناء الديني في طفولتها بقريتها بمحافظة الدقهلية، قبل أن تنتقل للقاهرة وتصبح أيقونة الغناء العربي لعقود، بحفلاتها الشهرية التي كانت تتوقف عندها الحياة في مصر والعالم العربي."
   },
   "محمد عبد الوهاب": {
-    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/abdel_wahab.jpg",
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/AbdulWehab.jpg",
     "born_year": "1902",
     "died_year": "1991",
     "bio": "موسيقار ومطرب وملحن مصري، يُلقب بـ«موسيقار الأجيال». من أوائل من أدخلوا الآلات الموسيقية الغربية إلى الموسيقى العربية، ولحّن لكبار المطربين والمطربات في العالم العربي على مدى أكثر من ستة عقود."
   },
   "سيد درويش": {
-    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/sayed_darwish.jpg",
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/sayed-darweesh.jpg",
     "born_year": "1892",
     "died_year": "1923",
     "bio": "يُلقب بـ«فنان الشعب» و«أبو الموسيقى المصرية الحديثة»، أحدث ثورة في الموسيقى العربية بربطها بالواقع الاجتماعي والوطني. رغم قصر حياته، ترك إرثاً موسيقياً أثّر في كل من جاء بعده من الملحنين المصريين."
   },
-  "عبد الحليم حافظ": {
-    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/abdel_halim.jpg",
-    "born_year": "1929",
-    "died_year": "1977",
-    "bio": "يُلقب بـ«العندليب الأسمر»، من أشهر المطربين العرب في القرن العشرين. عُرف بصوته العاطفي وارتباطه بجيل الشباب في عصره، وقدّم مئات الأغاني الرومانسية والوطنية التي لا تزال تُذاع حتى اليوم."
-  },
-  "أسمهان": {
-    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/asmahan.jpg",
+    "أسمهان": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/Asmahan.jpg",
     "born_year": "1912",
     "died_year": "1944",
     "bio": "مطربة سورية-مصرية، تُعد من أعظم الأصوات في تاريخ الغناء العربي رغم قصر مسيرتها الفنية التي انتهت بوفاتها المبكرة والمفاجئة. تميزت بصوتها الفريد وقدرتها على التنقل بين المقامات الموسيقية المعقدة بسهولة استثنائية."
