@@ -157,7 +157,11 @@
     "photo": "https://decostriker.github.io/MisrFone-pwa/artists/sayed-shata.jpg",
     "born_year": "",
     "died_year": "",
-    "bio": "هو مطرب ومونولوجست مصري من رواد الغناء والمسرح الغنائي في بدايات القرن العشرين وعصر الأسطوانات المبكرة، كان من نجوم فرق المسرح الغنائي والصالات في عشرينيات وثلاثينيات القرن العشرين."
+    "bio": "هو مطرب ومونولوجست مصري من رواد الغناء والمسرح الغنائي في بدايات القرن العشرين وعصر الأسطوانات المبكرة، كان من نجوم فرق المسرح الغنائي والصالات في عشرينيات وثلاثينيات القرن العشرين.",
+    "photos": [
+      "https://decostriker.github.io/MisrFone-pwa/artists/sayed-shata.jpg",
+      "https://decostriker.github.io/MisrFone-pwa/artists/sayed-shata-2.jpg"
+    ]
   },
   "الشيخ ابراهيم القباني": {
     "photo": "https://decostriker.github.io/MisrFone-pwa/artists/الشيخ-ابراهيم-القباني.jpg",
