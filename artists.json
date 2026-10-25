@@ -109,7 +109,12 @@
     "photo": "https://decostriker.github.io/MisrFone-pwa/artists/fatma-qadri.jpg",
     "born_year": "",
     "died_year": "",
-    "bio": "مطربة مصرية قديمة، اشتغلت في كثير من المسرحيات مع فوزي الجزايرلي. اشتهرت وبرزت في عشرينات وثلاثينات القرن العشرين الماضي، وسجلت عدداً من الأسطوانات لشركتي ميشيان وبوليفون."
+    "bio": "مطربة مصرية قديمة، اشتغلت في كثير من المسرحيات مع فوزي الجزايرلي. اشتهرت وبرزت في عشرينات وثلاثينات القرن العشرين الماضي، وسجلت عدداً من الأسطوانات لشركتي ميشيان وبوليفون.",
+    "photos": [
+      "https://decostriker.github.io/MisrFone-pwa/artists/fatma-qadri.jpg",
+      "https://decostriker.github.io/MisrFone-pwa/artists/fatma-qadri-2.jpg",
+      "https://decostriker.github.io/MisrFone-pwa/artists/fatma-qadri-3.jpg"
+    ]
   },
   "فاطمة سري": {
     "photo": "https://decostriker.github.io/MisrFone-pwa/artists/fatma.jpg",
