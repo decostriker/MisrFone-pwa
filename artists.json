@@ -170,12 +170,6 @@
     "died_year": "",
     "bio": "مطرب ومونولوجست مصري ينتمي إلى الجيل الثاني من رواد النهضة التراثية وفترة التسجيلات المبكرة على الأسطوانات في الربع الأول من القرن العشرين، يُعد من أبرز المؤدين الذين تعاونوا مع فنان الشعب سيد درويش في بدايات انتشار المونولوجات والأغاني الخفيفة في العشرينيات. غنى من ألحان سيد درويش مونولوج «بنت العمدة نص شربتات» (كلمات بديع خيري)."
   },
-  "الست سنية حسنين": {
-    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/sanya-hassanin.jpg",
-    "born_year": "",
-    "died_year": "",
-    "bio": "واحدة من المطربات الشهيرات في عصر الأسطوانات المبكر (الربع الأول من القرن العشرين)، وتُعد من مطربات «العوالم» والكهرمانات اللاتي انتقلن إلى عالم التسجيل التجاري في بدايات صناعة الموسيقى في مصر."
-  },
   "سيد أفندي شطا": {
     "photo": "https://decostriker.github.io/MisrFone-pwa/artists/sayed-shata.jpg",
     "born_year": "1897",
@@ -806,6 +800,15 @@
     "photos": [
       "https://decostriker.github.io/MisrFone-pwa/artists/samha-baghdadya.jpg",
       "https://decostriker.github.io/MisrFone-pwa/artists/samha-baghdadya-2.jpg"
+    ]
+  },
+  "سنية حسنين": {
+    "photo": "https://decostriker.github.io/MisrFone-pwa/artists/sanya-hassanin.jpg",
+    "born_year": "",
+    "died_year": "",
+    "bio": "واحدة من المطربات الشهيرات في عصر الأسطوانات المبكر (الربع الأول من القرن العشرين)، وتُعد من مطربات «العوالم» والكهرمانات اللاتي انتقلن إلى عالم التسجيل التجاري في بدايات صناعة الموسيقى في مصر.",
+    "photos": [
+      "https://decostriker.github.io/MisrFone-pwa/artists/sanya-hassanin.jpg"
     ]
   }
 }
